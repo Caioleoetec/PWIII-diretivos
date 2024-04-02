@@ -1,0 +1,13 @@
+<ul>
+  <li> Item para todos</li>
+  <li> Item para todos</li>
+  <li> Item para todos</li>
+  <li *ngif="autenticado"> Somente usuários autenticados</li>
+</ul>
+<button (click)="autenticar()"> Login </button>
+
+<ng-template #autenticado>
+  <p>Você não está logado</p>
+</ng-template>
+<br>
+<br>
